@@ -11,12 +11,12 @@ class JWTAuthentication(authentication.BaseAuthentication):
     """Класс авторицаяя пользователя по токену."""
 
     def authenticate(self, request):
-        CORRECT_AUTH_HEADER_LENGTH = 2
+        correct_auth_header_lenght = 2
         auth = get_authorization_header(request).split()
         auth_header_prefix = settings.SIMPLE_JWT.get('AUTH_HEADER_TYPES')
         if not auth:
             return None
-        if len(auth) != CORRECT_AUTH_HEADER_LENGTH:
+        if len(auth) != correct_auth_header_lenght:
             return None
         prefix_key = auth[0].decode('utf8')
         token = auth[1].decode('utf8')
