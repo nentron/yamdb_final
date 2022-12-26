@@ -15,7 +15,7 @@ jobs:
         pip install flake8 pep8-naming flake8-broken-line flake8-isort
         pip install -r api_yamdb/requirements.txt
     - name: Django  and flake tests
-      run: 
+      run: |
         python -m flake8
-        python -m pytest
+        pytest
 
