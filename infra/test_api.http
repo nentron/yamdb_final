@@ -1,0 +1,14 @@
+@token = Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzM4NCJ9.eyJpZCI6MTA1LCJleHAiOjE2NzIwNjEzNjd9.YyKBLkmXhGyRGnej-YmGroC0iprg2BrUvNRJhswpG_hQt8ervMj09hA60_ge-1H1
+
+POST http://localhost/api/v1/auth/token/
+Content-Type: application/json 
+
+{
+    "username": "dolgo",
+    "confirmation_code": "MXSRMEZuH5"
+}
+
+###
+GET http://localhost/api/v1/titles/2/reviews/
+Content-Type: application/json
+Authorization: {{token}}
