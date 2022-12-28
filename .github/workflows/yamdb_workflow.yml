@@ -34,7 +34,7 @@ jobs:
     - name: Build and push to Docker
       uses: docker/build-push-action@v3
       with:
-        context: api_yamdb/
+        context: "{{defaultContext:api_yamdb}}"
         push: true
         tags: nentron/yamdb_final:latest
 
