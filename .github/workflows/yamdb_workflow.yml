@@ -34,9 +34,10 @@ jobs:
     - name: Build and push to Docker
       uses: docker/build-push-action@v3
       with:
-        file: '{context}/api_yamdb/Dockerfile'
+        context: .
         push: true
         tags: nentron/yamdb_final:latest
+        file: ./api_yamdb/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
