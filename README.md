@@ -11,7 +11,7 @@ Yamdb_final - это проект созданный для публикации
 - Nginx
 
 ## Развертывание проекта из DockerHub:
-- 1.Открыть в браузере https://github.com/nentron/infra_sp2/tree/master/infra
+- 1.Открыть в браузере https://github.com/nentron/yamdb_final/
 - 2.Скопировать на локальный компьютер, директорию infra и перейдите в нее
 - 3.Открыть файл docker-compose.yaml и поменять строчку в сервисе веб вместо build.. написать image: nentron/api_yamdb:v0.002
 - 4.Создать .env и заполнить по образцу:
@@ -31,7 +31,7 @@ Yamdb_final - это проект созданный для публикации
     командой ```docker cp <директория расположения скаченного файла> <id web контенера>:app/``` и повторить пункт 7.
 - 8.Создать суперпользователя ```docker-compose exec web python manage.py createsuperuser```
 - 9.Собрать статику ```docker-compose exec web python manage.py collectstatic```
-- 10.Через http://localhost/admin/ войдите в свою учетную запись 
+- 10.Через http://158.160.42.211/admin/ войдите в свою учетную запись 
 
 ## Примеры работы с api проекта:
  
@@ -106,10 +106,11 @@ GET /api/v1/titles/{title_id}/reviews/{review_id}/comments/
 ```
 
 Подробное описание api в формате ReDoc доступно [тут] 
+Ссылка на развернутый проект: [yamdb_final]
 
 [DRF]: <https://www.django-rest-framework.org/>
-[тут]: <http://localhost/redoc/>
-
+[тут]: <http://158.160.42.211/redoc/>
+[yamdb_final]: <<http://158.160.42.211/>
 ## Авторы проекта
 - Nentron
 
