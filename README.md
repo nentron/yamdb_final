@@ -1,4 +1,5 @@
-# YAMDB_FINAL [work's status](https://github.com/nentron/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+# YAMDB_FINAL 
+[work's status](https://github.com/nentron/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 Yamdb_final - это проект созданный для публикации информации о произведение искуства, оставление ревью на них, комментарии на ривью. Он создан на REST API. В проекте реализованно 4 вида пользователя: админ, модератор, пользователь и анонимный пользователь.
 Пользователи могут оставлять отзывы и оценки произведениям на основании которых формируется рейтинг.
 
@@ -110,7 +111,7 @@ GET /api/v1/titles/{title_id}/reviews/{review_id}/comments/
 
 [DRF]: <https://www.django-rest-framework.org/>
 [тут]: <http://158.160.42.211/redoc/>
-[yamdb_final]: <<http://158.160.42.211/>
+[yamdb_final]: <http://158.160.42.211/>
 ## Авторы проекта
 - Nentron
 
