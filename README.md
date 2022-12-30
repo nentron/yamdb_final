@@ -1,5 +1,4 @@
-# YAMDB_FINAL 
-[work's status](https://github.com/nentron/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+# YAMDB_FINAL [work's status](https://github.com/nentron/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 Yamdb_final - это проект созданный для публикации информации о произведение искуства, оставление ревью на них, комментарии на ривью. Он создан на REST API. В проекте реализованно 4 вида пользователя: админ, модератор, пользователь и анонимный пользователь.
 Пользователи могут оставлять отзывы и оценки произведениям на основании которых формируется рейтинг.
 
