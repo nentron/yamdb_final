@@ -32,13 +32,14 @@ class TestWorkflow:
         filename = yaml if is_yaml else yml
 
         try:
-            with open(f'{os.path.join(root_dir, filename)}', 'r') as f:
+            with open(f'{os.path.join(root_dir, filename)}', 'r',
+                      encoding='utf8') as f:
                 yamdb = f.read()
         except FileNotFoundError:
             assert False, f'Проверьте, что добавили файл {filename} в каталог {root_dir} для проверки'
 
         assert (
-                re.search(r'on:\s*push:\s*branches:\s*-\smaster', yamdb) or
+                re.search(r'on:\s*push:\s*branches:\s*-\s*master', yamdb) or
                 'on: [push]' in yamdb or
                 'on: push' in yamdb
         ), f'Проверьте, что добавили действие при пуше в файл {filename}'
