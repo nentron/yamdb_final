@@ -105,7 +105,7 @@ GET /api/v1/titles/{title_id}/reviews/{review_id}/comments/
 }
 ```
 
-Подробное описание api в формате ReDoc доступно [тут] 
+Подробное описание api в формате ReDoc доступно [тут] \
 Ссылка на развернутый проект: [yamdb_final]
 
 [DRF]: <https://www.django-rest-framework.org/>
